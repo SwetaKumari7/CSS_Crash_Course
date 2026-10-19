@@ -1,0 +1,99 @@
+                                    /* Types of css adding - Inline, Internal, External.  */
+                                    /*  Inline - a style applied directly to an HTML element .For example: p{color: blue;} */
+                                    /* Internal - a style defined within the HTML document itself, typically within the <head> section .
+For example: <style> p { color: blue; } </style> */
+                                    /* External - a style defined in a separate .css file, which is linked to the HTML document using the <link> element .
+For example: <link rel="stylesheet" type="text/css" href="style.css"> */
+                                    /* CSS called by id */
+                                    
+                                    #myId {
+                                        color: red;
+                                    }
+                                    /* CSS by class */
+                                    
+                                    .myClass {
+                                        color: blue;
+                                    }
+                                    /* CSS by tag */
+                                    
+                                    p {
+                                        font-size: 50px;
+                                        font-family: Arial, sans-serif;
+                                        font-weight: bold;
+                                        color: rgb(187, 0, 255);
+                                    }
+                                    /* CSS by attribute */
+                                    
+                                    [title] {
+                                        color: green;
+                                    }
+                                    /* CSS by pseudo-class */
+                                    
+                                    a:hover {
+                                        text-decoration: underline;
+                                    }
+                                    /* CSS by pseudo-element */
+                                    
+                                    p::first-line {
+                                        font-weight: bold;
+                                    }
+                                    /* CSS difference by myclass,myid,mytag,myattribute,mypseudo-class,mypseudo-element.
+                            myclass- class selector- can be applied to multiple elements.It is difference from mytag by    */
+                                    /* myid- id selector- can be applied to a single element */
+                                    /* mytag- tag selector - can be applied to all elements of that type */
+                                    /* myattribute- attribute selector - can be applied to elements with a specific attribute */
+                                    /* mypseudo-class- pseudo-class selector - can be applied to elements in a specific state */
+                                    /* mypseudo-element- pseudo-element selector - can be applied to specific parts of elements */
+                                    /*                             
+                            Size of font -pixels,em,rem .
+                            em- relative to the font size of the parent element . 
+                            rem- relative to the font size of the root element . 
+                            /* pixel- absolute size */
+                                    /* BoxModel */
+                                    
+                                    .container {
+                                        width: 300px;
+                                        height: 200px;
+                                        padding: 20px;
+                                        border: 5px solid black;
+                                        margin: 10px;
+                                        padding: 20px;
+                                        border: 5px solid black;
+                                        margin: 10px;
+                                    }
+                                    /* Flexbox- means kept it in one line */
+                                    
+                                    .container {
+                                        display: flex;
+                                    }
+                                    /* Position- static,absolute,relative,fixed,sticky.
+                                    Static position-means kept in horizontal order.
+                                    Relative position-means relative to its normal position.
+                                    Fixed position-means fixed relative to the viewport.
+                                    Sticky position-means sticky relative to the viewport. 
+                                    */
+                                    
+                                    .position-demo {
+                                        position: relative;
+                                        top: 10px;
+                                        left: 20px;
+                                        margin-top: 30px;
+                                    }
+                                    
+                                    .parent {
+                                        position: relative;
+                                        width: 200px;
+                                        height: 200px;
+                                        background-color: lightblue;
+                                        padding: 20px;
+                                    }
+                                    
+                                    .child {
+                                        position: absolute;
+                                        top: 50px;
+                                        left: 50px;
+                                        width: 100px;
+                                        height: 100px;
+                                        background-color: lightgreen;
+                                        padding: 10px;
+                                    }
